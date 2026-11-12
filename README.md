@@ -3,6 +3,16 @@
 把官方 DeepSeek Harness 本体与全部插件、配置、知识库一次性装到一台干净的 Windows 机器上。
 装完之后不需要联网跑 `pnpm install`，不需要预装 Node、Python 或 7-Zip。
 
+## 下载
+
+安装器与分卷都放在 Release 里，仓库本身只放源码与文档，因为单个分卷超过 GitHub
+仓库 100 MiB 的单文件上限。
+
+直达地址：https://github.com/DRDRDRRDDRDR/dsh-pack-installer/releases/latest
+
+需要下载的文件：`dsh-pack-installer.exe`、`payload.tar.001` 到 `payload.tar.004`、
+`manifest.json`、`payload.sha256`、`volumes.json`。全部放在同一个文件夹里再运行安装器。
+
 ## 这个包解决什么问题
 
 上一版分发包在别的机器上装不上，根因已经查实：它把 `~/.dsh/profiles/node_modules` 当成真实的依赖树来打包，
