@@ -1,0 +1,17 @@
+# 构建产物与临时目录，不入库
+/target/
+/_build/
+/_freeze/
+/_view/
+/_smoke/
+/_probe7z/
+/_fulltest/
+*.log
+*.tar
+payload.tar.*
+patch.tar
+manifest.json
+failed.json
+filelist.txt
+patch-list.txt
+_build_manifest.json
